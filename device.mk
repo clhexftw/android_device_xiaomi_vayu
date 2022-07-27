@@ -318,6 +318,7 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
+# Qti
 TARGET_BOARD_PLATFORM := msmnile
 
 TARGET_COMMON_QTI_COMPONENTS := \
@@ -367,10 +368,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/qcom/display \
-    hardware/qcom/media \
-    vendor/qcom/opensource/audio-hal/primary-hal
+    hardware/xiaomi
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
